@@ -1,0 +1,44 @@
+{
+    "name": "vue3-dummy",
+    "version": "1.0.0",
+    "description": "Placeholder Images and Dummy Text for Vue3",
+    "main": "dist/vue3-dummy.cjs.js",
+    "module": "dist/vue3-dummy.es2015.js",
+    "jsdelivr": "dist/vue3-dummy.js",
+    "unpkg": "dist/vue3-dummy.js",
+    "scripts": {
+        "build": "npm update dummyjs --save && node ./build.js",
+        "dev": "npm run build && serve ./"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/RetroCIB/vue3-dummy.git"
+    },
+    "files": [
+        "dist"
+    ],
+    "keywords": [
+        "vue",
+        "vue3",
+        "dummy",
+        "placeholder",
+        "lorum",
+        "ipsum"
+    ],
+    "author": "RetroCIB",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/RetroCIB/vue3-dummy/issues"
+    },
+    "homepage": "https://github.com/RetroCIB/vue3-dummy#readme",
+    "dependencies": {
+        "dummyjs": "^1.1.7"
+    },
+    "devDependencies": {
+        "rollup": "^0.50.0",
+        "rollup-plugin-buble": "^0.16.0",
+        "rollup-plugin-commonjs": "^8.2.1",
+        "rollup-plugin-node-resolve": "^3.0.0",
+        "serve": "^13.0.2"
+    }
+}
