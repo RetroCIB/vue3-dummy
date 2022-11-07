@@ -1,6 +1,6 @@
 {
     "name": "vue3-dummy",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Placeholder Images and Dummy Text for Vue3",
     "main": "dist/vue3-dummy.cjs.js",
     "module": "dist/vue3-dummy.es2015.js",
