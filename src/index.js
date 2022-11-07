@@ -9,7 +9,7 @@ Plugin.install = (app, options) => {
         if (!el) {
             return;
         }
-        const args = binding.arg // v-dummy:args
+        const args = binding.arg || binding.value  // v-dummy:args
             || Object.keys(binding.modifiers).join(',') // v-dummy.args
             || (typeof binding.value == 'string' ? binding.value : binding.expression)
             || '';

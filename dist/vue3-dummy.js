@@ -151,7 +151,7 @@ Plugin.install = function (app, options) {
         if (!el) {
             return;
         }
-        var args = binding.arg // v-dummy:args
+        var args = binding.arg || binding.value  // v-dummy:args
             || Object.keys(binding.modifiers).join(',') // v-dummy.args
             || (typeof binding.value == 'string' ? binding.value : binding.expression)
             || '';
